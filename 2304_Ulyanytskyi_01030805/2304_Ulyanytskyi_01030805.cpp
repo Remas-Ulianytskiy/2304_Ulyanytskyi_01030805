@@ -28,6 +28,7 @@ int main()
 	for (const auto& element : num_array) {
 		cout << element << ", ";
 	}
+	cout << '}';
 
 	cout << endl;
 	cout << "min: " << min_num << endl;
