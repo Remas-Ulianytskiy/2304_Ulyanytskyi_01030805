@@ -17,18 +17,16 @@ int main()
 
 	fill_array_rand(num_array);
 
+	cout << "Array = { ";
 	for (const auto& element : num_array) {
 		if (min_num > element)
 			min_num = element;
 		if (max_num < element)
 			max_num = element;
-	}
 
-	cout << "Array = { ";
-	for (const auto& element : num_array) {
-		cout << element << ", ";
+		cout << element << ' ';
 	}
-	cout << '}';
+	cout << '}';	
 
 	cout << endl;
 	cout << "min: " << min_num << endl;
